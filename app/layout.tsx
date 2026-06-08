@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Fraunces, Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import { profile, yearsExp } from "@/lib/data";
 import "./globals.css";
@@ -63,7 +64,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="dd9bc276-a25a-4865-8f3e-6787fb48c799"
+        />
+      </body>
     </html>
   );
 }
