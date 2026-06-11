@@ -71,6 +71,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           src="https://cloud.umami.is/script.js"
           data-website-id="dd9bc276-a25a-4865-8f3e-6787fb48c799"
         />
+        <Script
+          async
+          src="https://pinreview-frontend.onrender.com/widget.js"
+          data-project="cmq5dkva20004b6s8a0s4hwpt"
+        />
       </body>
     </html>
   );
