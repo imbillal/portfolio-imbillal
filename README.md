@@ -1,6 +1,6 @@
 # billal.dev — personal portfolio
 
-Personal site of **Billal Hossain**, Front-End Engineer (React · Next.js).
+Personal site of **Billal Hossain**, Software Engineer (React · Next.js).
 
 A dark, terminal-flavoured single-page portfolio: fixed sidebar with scroll-spy
 navigation, an animated hero (aurora, cursor spotlight, typewriter), a signature

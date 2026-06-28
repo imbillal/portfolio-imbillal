@@ -19,10 +19,10 @@ export function yearsExp(): string {
 export const profile = {
   name: "Billal Hossain",
   handle: "@imbillal",
-  role: "Front-End Engineer",
+  role: "Software Engineer",
   // rotating words for the hero typewriter
-  roles: ["Front-End Engineer", "React Developer", "Next.js Specialist", "UI Engineer"],
-  tagline: "Front-End Engineer · React · Next.js",
+  roles: ["Software Engineer", "React Developer", "Next.js Specialist", "UI Engineer"],
+  tagline: "Software Engineer · React · Next.js",
   location: "Sylhet, Bangladesh",
   email: "billalsgc@gmail.com",
   phone: "+880 1758 759843",
@@ -51,7 +51,7 @@ export const socials = [
 export const about = {
   heading: "Building modern web, one component at a time",
   body: (years: string): string[] => [
-    `I'm Billal Hossain — a Front-End Engineer with ${years} years of experience building modern web applications with React, Next.js, and the latest web technologies. I learn fast and adapt to new tools to ship high-quality, dependable solutions.`,
+    `I'm Billal Hossain — a Software Engineer with ${years} years of experience building modern web applications with React, Next.js, and the latest web technologies. I learn fast and adapt to new tools to ship high-quality, dependable solutions.`,
     "I currently work as a Software Engineer at Dorik AI, where I've led 45+ major epics on a sophisticated website-building platform reaching 150K+ users — owning everything from state management and API integration to testing and accessible UI.",
     "I'm a strong team player who collaborates closely with designers, engineers, and product teams, and I care about the whole software lifecycle, from planning right through to deployment.",
   ],
