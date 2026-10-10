@@ -935,3 +935,32 @@ html[data-theme="light"] .hero-aurora { opacity: 0.3; }
 }
 .edu-degree { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.3rem; }
 .edu-school { font-size: 0.78rem; color: var(--muted); }
+
+/* ============================================================
+   PROJECTS
+   ============================================================ */
+.project-list { display: flex; flex-direction: column; gap: 1.2rem; }
+.project-card {
+  padding: 1.6rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+  box-shadow: 0 24px 50px -34px var(--accent-glow);
+}
+.project-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; }
+.project-name { font-size: 1.45rem; font-weight: 600; }
+.project-tagline { font-size: 0.82rem; color: var(--text-dim); margin-top: 3px; }
+.project-desc { font-size: 0.95rem; max-width: 62ch; }
+.project-link { align-self: flex-start; display: inline-flex; align-items: center; gap: 0.5rem; }
+.project-stack { display: flex; flex-direction: column; gap: 0.6rem; }
+.project-label { font-size: 0.7rem; color: var(--muted); }
+.chip--accent {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--line));
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+}

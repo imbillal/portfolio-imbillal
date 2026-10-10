@@ -38,6 +38,7 @@ export const nav = [
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
   { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -148,7 +149,40 @@ export const experience: Job[] = [
   },
 ];
 
-export type Education = { degree: string; school: string; period: string };
+export type Project = {
+  name: string;
+  tagline: string;
+  url: string;
+  tags?: string[];
+  live?: boolean;
+  description: string;
+  features: string[];
+  stack?: string[];
+};
+
+export const projects: Project[] = [
+  {
+    name: "Pinreview",
+    tagline: "Visual website feedback & bug tracking",
+    url: "https://pinreview.one",
+    tags: ["Founder", "SaaS"],
+    live: true,
+    description:
+      "Pinreview turns website feedback into action. Click any element to leave a comment — it becomes a task with a screenshot, the exact selector, and full technical context.",
+    features: [
+      "Pin feedback on any element",
+      "Auto-captured screenshots",
+      "Kanban triage",
+      "Embeddable widget",
+      "Browser extension",
+      "Slack & webhooks",
+      "AI coding tool handoff",
+    ],
+    stack: ["TypeScript", "React", "Next.js", "Node.js", "Express", "PostgreSQL","Tailwind CSS"],
+  },
+];
+
+export type Education ={ degree: string; school: string; period: string };
 
 export const education: Education[] = [
   { degree: "MBA — Business Administration", school: "Madan Mohan College, Sylhet", period: "2021 — 2022" },
